@@ -1,0 +1,25 @@
+# Git line ending normalization
+* text=auto
+
+# Python files — always LF in repo
+*.py text eol=lf
+
+# Markdown — always LF in repo
+*.md text eol=lf
+
+# Data files — always LF
+*.csv text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.txt text eol=lf
+
+# Binary files — never modify
+*.pt binary
+*.pth binary
+*.onnx binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.mp4 binary
+*.avi binary

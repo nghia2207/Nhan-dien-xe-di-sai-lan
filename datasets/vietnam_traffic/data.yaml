@@ -1,0 +1,12 @@
+
+path: C:/Users/ASUS/Downloads/ITS-main/datasets/vietnam_traffic
+train: train/images
+val: val/images
+
+# Classes
+nc: 4
+names:
+  0: car
+  1: motorcycle
+  2: bus
+  3: truck

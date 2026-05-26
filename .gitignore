@@ -1,0 +1,68 @@
+# ============================================================
+#  .gitignore — ITS Lane Violation Detection System
+# ============================================================
+
+# --- Video files (quá nặng để đưa lên Git) ---
+traffic_ai/data/video/*.mp4
+traffic_ai/data/video/*.avi
+traffic_ai/data/video/*.mov
+traffic_ai/data/video/*.mkv
+
+# --- YOLO model weights (tải lại qua ultralytics) ---
+*.pt
+*.pth
+*.onnx
+*.engine
+*.torchscript
+
+# --- Output runtime (tự sinh mỗi lần chạy) ---
+traffic_ai/output/evidence/
+traffic_ai/output/violations_log.csv
+traffic_ai/output/demo_violations_log.csv
+traffic_ai/output/*.yaml
+
+# --- Python cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- YOLO training output ---
+runs/
+*.cache
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.suo
+*.user
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Sensitive / Environment ---
+.env
+.env.*
+secrets.py
+config_local.py
+
+# --- Logs ---
+*.log
+*.tmp
+
+# ⚠️ CÁC FILE ĐƯỢC GIỮ LẠI (không bị ignore):
+#   traffic_ai/*.py          → Source code chính
+#   datasets/                → Dữ liệu training nhỏ
+#   README.md                → Tài liệu
+#   CLAUDE.md                → Hướng dẫn AI
+#   .claude/rules/           → Rules cho Claude Code
+#   requirements.txt         → Dependencies

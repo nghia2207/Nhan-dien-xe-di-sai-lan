@@ -1,0 +1,7 @@
+# Requirements — ITS Lane Violation Detection System
+# Install: pip install -r requirements.txt
+
+# Core computer vision & AI
+ultralytics>=8.0.0        # YOLOv8 / YOLOv11 detection framework
+opencv-python>=4.8.0      # Video capture, drawing, image processing
+numpy>=1.24.0             # Numerical operations
