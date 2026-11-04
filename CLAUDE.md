@@ -43,12 +43,3 @@ python traffic_ai/detect_lanes_roadpoly.py
 # Chạy giao diện demo đầy đủ
 python traffic_ai/demo_app.py
 ```
-
----
-
-## Ghi chú cho Claude
-
-- Khi sửa code, **luôn đọc rules tương ứng** trước khi thay đổi logic.
-- Không xóa hay comment out các phần logging/evidence trừ khi được yêu cầu rõ ràng.
-- Các tham số calibration (`ROAD_POLY_NORM`, `BOUNDARY_TS`) là **dữ liệu video-specific**, không hardcode giá trị mới mà không có video tương ứng.
-- Đọc [`06-workflow.md`](.claude/rules/06-workflow.md) trước khi thay đổi pipeline chính.
